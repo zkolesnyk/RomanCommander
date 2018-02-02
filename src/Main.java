@@ -65,22 +65,44 @@ public class Main {
                 System.out.printf("[%d] В атаку!%n", i);
 
                 menuChoise = in.nextInt();
-                if (menuChoise == archersMenu) {
-                    do {
+//                if (menuChoise == archersMenu) {
+//                    do {
+//                        System.out.println("Сколько лучников отправить в наступление?");
+//                        archersSent = in.nextInt();
+//                    } while (!(archersSent > -1) && archersSent <= archers);
+//                } else if (menuChoise == catapultsMenu) {
+//                    do {
+//                        System.out.println("Сколько катапульт отправить в наступление?");
+//                        catapultsSent = in.nextInt();
+//                    } while (!(catapultsSent > -1) && catapultsSent <= catapults);
+//                } else if (menuChoise == swordsmenMenu) {
+//                    do {
+//                        System.out.println("Сколько легионеров отправить в наступление?");
+//                        swordsmenSent = in.nextInt();
+//                    } while (!(swordsmenSent > -1) && swordsmenSent <= swordsmen);
+//                }
+
+                switch (menuChoise) {
+                    case archersMenu:
+                        do {
                         System.out.println("Сколько лучников отправить в наступление?");
                         archersSent = in.nextInt();
-                    } while (!(archersSent > -1) && archersSent <= archers);
-                } else if (menuChoise == catapultsMenu) {
-                    do {
+                        } while (!(archersSent > -1) && archersSent <= archers);
+                    break;
+                    case catapultsMenu:
+                        do {
                         System.out.println("Сколько катапульт отправить в наступление?");
                         catapultsSent = in.nextInt();
-                    } while (!(catapultsSent > -1) && catapultsSent <= catapults);
-                } else if (menuChoise == swordsmenMenu) {
-                    do {
+                        } while (!(catapultsSent > -1) && catapultsSent <= catapults);
+                    break;
+                    case swordsmenMenu:
+                        do {
                         System.out.println("Сколько легионеров отправить в наступление?");
                         swordsmenSent = in.nextInt();
-                    } while (!(swordsmenSent > -1) && swordsmenSent <= swordsmen);
+                        } while (!(swordsmenSent > -1) && swordsmenSent <= swordsmen);
+                    break;
                 }
+
             } while (menuChoise != fightMenu);
 
             System.out.println("Сражение началось...");
