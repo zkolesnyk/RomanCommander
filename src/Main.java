@@ -37,7 +37,7 @@ public class Main {
         while (!end) {
             // число боевых едениц, отправленных в атаку
             int archersSent = 0, catapultsSent = 0, swordsmenSent = 0;
-            System.out.printf("В твоём распоряжении %d лучников, %d катапульт, а также %d легионеров.", archers, catapults, swordsmen);
+            System.out.printf("В твоём распоряжении %d лучников, %d катапульт, а также %d легионеров.%n", archers, catapults, swordsmen);
             System.out.printf("Германия выставила %d лучников, %d катапульт, а также %d легионеров%n", gArchers, gCatapults, gSwordsmen);
 
             do {
@@ -117,8 +117,6 @@ public class Main {
 
         if (lost) {
             System.out.println("Ты потерпел поражение. Попробуй еще раз.");
-        }
-
-        System.out.println("Поздравляем с победой!");
+        } else System.out.println("Поздравляем с победой!");
     }
 }
