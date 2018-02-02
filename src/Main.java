@@ -108,7 +108,7 @@ public class Main {
             gCatapults = (gCatapultsDead < gCatapults) ? gCatapults - gCatapultsDead : 0;
             gSwordsmen = (gSwordsmenDead < gSwordsmen) ? gSwordsmen - gSwordsmenDead : 0;
 
-            System.out.printf("Битва была долгой. %d лучников погибло, %d катапульт разрушено, %d легионеров мертвы.", archersDead, catapultsDead, swordsmenDead);
+            System.out.printf("Битва была долгой. %d лучников погибло, %d катапульт разрушено, %d легионеров мертвы.%n", archersDead, catapultsDead, swordsmenDead);
 
             if ((archers + catapults + swordsmen) == 0) end = lost = true;
             else if ((gArchers + gCatapults + gSwordsmen) == 0) {
